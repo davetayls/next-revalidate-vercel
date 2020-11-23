@@ -18,7 +18,7 @@ export const getStaticPaths = () =>
       { params: { slug: ['e', 'f'] } },
       { params: { slug: ['g', 'h'] } }
     ],
-    fallback: true
+    fallback: 'blocking'
   })
 
 export default Slug
