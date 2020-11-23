@@ -1,4 +1,4 @@
-const RevalidatePage = ({ slug }) =>
+const RevalidateSlug = ({ slug }) =>
   <h1>Revalidate Page {(slug || []).join('/')}</h1>
 
 export const getStaticProps = ({ slug }) => {
@@ -21,4 +21,4 @@ export const getStaticPaths = () =>
     fallback: true
   })
 
-export default RevalidatePage
+export default RevalidateSlug
