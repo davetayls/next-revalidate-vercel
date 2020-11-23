@@ -6,7 +6,7 @@ export const getStaticProps = ({ params }) => {
     props: {
       slug: params.slug || []
     },
-    revalidate: 10
+    revalidate: 30 * 60
   }
 }
 
