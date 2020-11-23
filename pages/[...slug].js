@@ -1,10 +1,10 @@
 const Slug = ({ slug }) =>
   <h1>Revalidate Page {(slug || []).join('/')}</h1>
 
-export const getStaticProps = ({ slug }) => {
+export const getStaticProps = ({ params }) => {
   return {
     props: {
-      slug
+      slug: params.slug || []
     },
     revalidate: 10
   }
